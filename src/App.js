@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-
+import Header from './components/Header'
+import Footer from './components/Footer'
 function App() {
+  const firstName = 'Juan';
+  const lastName = 'Dela Cruz';
+  const age = 25;
+  const arr = [1,2,3,4,5];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Header />
+          <main>
+            <h1>Hello {firstName} {lastName} {age} {arr} </h1>
+          </main>
+        <Footer />
     </div>
   );
 }
